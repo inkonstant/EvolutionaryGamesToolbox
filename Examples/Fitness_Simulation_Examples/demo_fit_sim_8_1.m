@@ -19,4 +19,4 @@ ylabel('Number of individuals', Interpreter='latex', FontSize=15);
 grid on;
 grid minor;
 
-print('fig_sim_the_8_1', '-dpng', '-r300')
+print('fig_fit_sim_8_1', '-dpng', '-r300')
