@@ -12,10 +12,12 @@ function [POP, BST] = TourSimImi(B, Strategies, POP0, K, T, J)
         g = zeros(1, S);
 
         for x = 1:S
-            for y = 1:S
-                g(x) = g(x) + W(y) * V(x,y);
+            if W(x) > 0
+                for y = 1:S
+                        g(x) = g(x) + W(y) * V(x,y);
+                end
+                g(x) = g(x) - V(x,x);
             end
-            g(x) = g(x) - V(x,x);
         end
 
         maxPayOff = max(g);

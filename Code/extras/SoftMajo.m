@@ -1,7 +1,7 @@
 function move = SoftMajo(history)
     % Begins by cooperating and cooperates as long as 
-    % the number of times the opponent has cooperated is greater that or equal to 
-    % the number of times it has defected. Otherwise she defects
+    % the number of times the opponent has cooperated is greaten that or equal to 
+    % the number of times it has defected. Otherwise defects
 
     if isempty(history)
         move = 'C';
